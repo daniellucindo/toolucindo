@@ -1,0 +1,64 @@
+/*Reset*/
+*, ul {padding:0;margin:0;}		
+a{text-decoration:none;}
+.header{width:100%;}
+a img {border:0;}
+li {list-style-type: none} 
+/*body*/
+body{width:100%;overflow-x:hidden;margin:0;padding:0;font-family: 'Open Sans', sans-serif;background:#e6e6e6;}
+/*################## Tooltips  ##################*/
+/*content 960*/
+.content-960{width:100%;max-width:960px;margin:0 auto;display:block}
+/*gravity*/
+.gravity{width:640px;border-spacing: 5px;display:block;margin:300px auto 0;}
+.gravity li{margin:10px 10px 5px;width:190px;display:inline-block;}
+.gravity li a{color:#fff;}
+/*.molde-element*/
+.molde-element{vertical-align: middle; padding: 5px 0; background-color:#00415e; width:100%;position:relative;}
+.molde-element .item-molde{text-align: center;display:block;}
+.molde-element .btn-middle{margin-top:15px;}
+/*Bg molde*/
+.bg-molde{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0, 0, 0, 0.7);z-index:10;width:100%;height:100%;display:none;}
+/*Class que add position relative e z index*/
+.myClass-top{z-index:11;}
+/*description tooltip*/
+.description-tooltip{position:absolute;width:350px;min-height:160px;background:#01b2e6;padding:15px 20px;color:#fff;display:none;z-index:11;}
+.description-tooltip .title-tooltip{font-weight:600;font-size:20px;margin-bottom:15px;color:#fff;}
+.description-tooltip p{font-size:16px;font-weight:400;color:#fff;}
+/*description tooltip >> Btn >>> margin*/
+.description-tooltip .padrao-middle{margin-top:20px;}
+/*Icon x close*/
+.close{position:absolute;right:15px;top:15px;width:11px;height:11px;}
+/*Setas dos boxes*/
+/*Icon ponta Azul / Suas Posições*/
+.icon_arrow-top{border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:8px solid #01b2e6;position:absolute;bottom:100%;}
+.icon_arrow-left{border-top: 8px solid transparent;border-bottom:8px solid transparent;border-right:8px solid #01b2e6;position:absolute;right:100%;}
+.icon_arrow-right{ border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:8px solid #01b2e6;position:absolute;left:100%;}
+.icon_arrow-bottom{border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid #01b2e6;position:absolute;top:100%;}
+/*north-west >>> */
+#north-west .icon_arrow-top{left:5px;}
+#north-west .description-tooltip{top:40px;left:0;}
+/*north >>><<< Center*/
+/* ###################  MArgins left é sempre o valor do tamanho / 2!!!! ###################*/
+#north .icon_arrow-top{left:50%;margin-left:-8px;}
+#north .description-tooltip{top:40px;left:50%;margin-left:-195px;}
+/*North-east <<<< */
+#north-east .icon_arrow-top{right:5px;bottom:100%;}
+#north-east .description-tooltip{top:40px;right:0px;}
+/*west <<<< */
+#west .icon_arrow-left{top:50%;margin-top:-8px;}
+#west .description-tooltip{top:50%;left:100%;margin-top:-102px;margin-left:10px;}
+/*east >>>>*/
+#east .icon_arrow-right{top:50%;margin-top:-8px;}
+#east .description-tooltip{top:50%;right:100%;margin-top:-102px;margin-right:10px;}
+/*south-west >>>>*/
+#south-west .icon_arrow-bottom{left:5px;}
+#south-west .description-tooltip{bottom:100%;left:0;margin-bottom:10px;}
+/*south >>>>*/
+#south .icon_arrow-bottom{left:50%;margin-left:-8px;}
+#south .description-tooltip{bottom:100%;left:50%;margin-left:-195px;margin-bottom:10px;}
+/*south-east <<<*/
+#south-east .icon_arrow-bottom{right:7px;}
+#south-east .description-tooltip{bottom:100%;right:0;margin-bottom:10px;}
+/*btn*/
+.btn-middle{text-align:center;text-transform:uppercase;cursor:pointer;background-color:#00415e;border-bottom:3px solid #0089be;padding:5px 10px;font-size:12px;display:inline-block;border-radius:5px;}
